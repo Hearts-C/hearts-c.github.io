@@ -1,0 +1,420 @@
+/* Heart developers */
+/* Main-Page.css : Core CSS */
+
+:root {
+  --no_article_background_image: linear-gradient(20deg, #3A649D, #3A439D);
+  --light_mode_background: #ffffff;
+  --dark_mode_background: rgb(33, 33, 37);
+  --footer_light_background: rgb(238, 237, 237);
+  --footer_dark_background: rgb(42, 42, 49);
+  --article_side_menu_light_background: rgb(238, 237, 237);
+  --article_side_menu_dark_background: rgb(42, 42, 49);
+  --dark_labels_text1: #ffffff;
+  --light_labels_text1: #000000;
+  --message_dark_background: rgb(42, 42, 49);
+  --message_light_background: rgb(238, 237, 237);
+  --button_light_background: rgb(97, 97, 97);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+
+body {
+  background: var(--light_mode_background);
+  overflow-x: initial;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+a:link {
+  color: #3A649D;
+}
+
+a:visited {
+  color: #3A649D;
+}
+
+a:hover {
+  color: #3A649D;
+}
+
+a:active {
+  color: #3A649D;
+}
+
+#Root_Container {
+  width: 100%;
+}
+
+.Page_Marker {
+  position: absolute;
+  background-color: rgb(42, 145, 255);
+  border-radius: 100%;
+  width: 1%;
+  height: 2vh;
+}
+
+/* Article Container */
+#Article_Container {
+  height: auto;
+}
+
+#Article_Container .Article {
+  display: flex;
+}
+
+#Article_Container .Article .Center_Container {
+  width: 50%;
+  height: auto;
+  margin-left: 3vw;
+}
+
+/* End Article Container */
+
+
+
+/* Article Header */
+#Article_Container .Article_Header {
+  width: 96%;
+  height: auto;
+  background-image: var(--no_article_background_image);
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  padding: 2%;
+  margin: 0;
+}
+
+#Article_Container .Article_Header .Path_Container {
+  font-size: 100%;
+  color: #ffffff;
+  font-family: verdana;
+  font-weight: lighter;
+}
+
+#Article_Container .Article_Header .Path_Container .Path_Link {
+  font-style: none;
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(0, 255, 136);
+  transition: 0.5s;
+}
+
+#Article_Container .Article_Header .Path_Container .Path_Link:hover {
+  color: rgb(2, 204, 110);
+}
+
+#Article_Container .Article_Header .Path_Container .Current_Path {
+  font-weight: bolder;
+  color: rgb(0, 255, 106);
+}
+
+#Article_Container .Article_Header .Article_Title {
+  color: #ffffff;
+  font-family: verdana;
+  font-weight: bolder;
+  font-size: 550%;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* End Article Header */
+
+
+
+/* Article Section Container */
+#Article_Container .Center_Container .Section_Container {
+  width: 75vw;
+  margin-top: 3vh;
+}
+
+#Article_Container .Center_Container .Section_Container .Content {
+  font-size: 125%;
+  border: 0;
+  border-width: 0;
+  padding: 0;
+  text-align: center;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+#Article_Container .Center_Container .Section_Container .Image {
+  width: 25vw;
+  border-radius: 10px;
+  float: right;
+}
+
+/* End Article Section Container */
+
+
+
+/* Side Menu Container */
+#Article_Container .Side_Menu_Container {
+  background: var(--article_side_menu_light_background);
+  border-radius: 10px;
+  height: 80vh;
+  width: 10vw;
+  margin-top: 2vh;
+  display: inline-block;
+  margin-left: 1vw;
+  margin-bottom: 2vh;
+}
+
+/* End Side Menu Container */
+
+
+
+/* Home Container */
+#Home_Container .Articles_Container {
+  width: 100%;
+  height: auto;
+  padding-top: 8vh;
+  margin-bottom: 5vh;
+  overflow-y: auto;
+  max-height: 80vh;
+  padding-bottom: 3vh;
+}
+
+#Home_Container .Articles_Container .Article_Selection_Container {
+  width: 60vw;
+  height: 6vh;
+  margin-left: 20vw;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 0;
+  background-image: var(--no_article_background_image);
+  transition: 0.5s;
+}
+
+#Home_Container .Articles_Container .Article_Selection_Container:hover {
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+#Home_Container .Articles_Container .Article_Selection_Container .Article_Title {
+  color: #ffffff;
+  font-family: verdana;
+  font-weight: bolder;
+  user-select: none;
+  font-size: 150%;
+}
+
+/* End Home Container */
+
+
+
+/* Footer Container */
+.Footer_Container {
+  width: 100%;
+  height: auto;
+  background: var(--footer_light_background);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.Footer_Container .Bottom_Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer_Container .Bottom_Section .Bottom_Label {
+  font-family: verdana;
+  font-size: 80%;
+  font-weight: bolder;
+  color: var(--light_labels_text1);
+}
+
+.Footer_Container .Bottom_Section .Divider {
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 115%;
+  font-weight: bolder;
+}
+
+/* End Footer Container */
+
+
+
+/* Chat App */
+#Root_Container .Name_Choose_Container {
+  width: 100%;
+  height: 100vh;
+  background-image: var(--no_article_background_image);
+}
+
+#Root_Container .Name_Choose_Container .Container_Title {
+  font-family: verdana;
+  font-weight: bolder;
+  font-size: 350%;
+  padding-top: 35vh;
+  padding-bottom: 5vh;
+  color: #ffffff;
+}
+
+#Root_Container .Name_Choose_Container .Join_Button {
+  background-color: #222222;
+  width: 7vw;
+  height: 4vh;
+  color: #ffffff;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: verdana;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+#Root_Container .Name_Choose_Container .Join_Button:hover {
+  width: 8vw;
+  background-color: #292929;
+}
+
+#Root_Container .Name_Choose_Container .Name_Input {
+  background-color: #222222;
+  width: 40vw;
+  height: 3vh;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: verdana;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+}
+
+#Root_Container .App_Container .Messages_Container {
+  height: 88vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#Root_Container .App_Container .Messages_Container .Message_Content_Container {
+  width: 98%;
+  padding: 1%;
+  background: var(--message_light_background);
+  bottom: 0;
+}
+
+#Root_Container .App_Container .Messages_Container .Message_Content_Container .Content {
+  color: var(--light_labels_text1);
+  word-break: break-all;
+  overflow-wrap: break-word;
+  font-family: verdana;
+  font-weight: lighter;
+  text-align: left;
+}
+
+#Root_Container .App_Container .Message_Hotbar_Container {
+  width: 96%;
+  height: 8vh;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Root_Container .App_Container .Message_Hotbar_Container .Send_Button {
+  background-color: #222222;
+  width: 7vw;
+  height: 4vh;
+  color: #ffffff;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: verdana;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+#Root_Container .App_Container .Message_Hotbar_Container .Send_Button:hover {
+  width: 8vw;
+  background-color: #292929;
+}
+
+#Root_Container .App_Container .Message_Hotbar_Container .Message_Input {
+  background-color: #222222;
+  width: 80vw;
+  height: 5vh;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: verdana;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  text-align: left;
+  margin-right: 10px;
+}
+
+/* End Chat App */
+
+
+
+/* Media */
+@media only screen and (max-width: 691.2px) {
+  #Article_Container .Side_Menu_Container {
+    display: none;
+  }
+
+  #Home_Container .Articles_Container {
+    padding-top: 4vh;
+    margin-bottom: 4vh;
+    padding-bottom: 1vh;
+  }
+
+  #Home_Container .Articles_Container .Article_Selection_Container {
+    width: 90vw;
+    height: 15vh;
+    margin-left: 0vw;
+    border-radius: 0px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: block;
+  }
+
+  #Home_Container .Articles_Container .Article_Selection_Container:hover {
+    width: 90vw;
+    height: 18vh;
+    margin-left: 0vw;
+  }
+
+  #Home_Container .Articles_Container .Article_Selection_Container .Article_Title {
+    color: #ffffff;
+    font-size: 150%;
+    font-weight: bolder;
+    text-align: left;
+  }
+
+  .Footer_Container .Bottom_Section {
+    display: block;
+  }
+
+  .Footer_Container .Bottom_Section .Divider {
+    display: none;
+  }
+}
